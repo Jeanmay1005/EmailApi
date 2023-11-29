@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS email
 )`
 
 var insertEmailSchema = `
-	INSERT INTO email (title, content, author) VALUES ($1, $2, $3) RETURNING ID`
+	INSERT INTO email (title, content, author) VALUES ($1, $2, $3) RETURNING id`

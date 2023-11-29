@@ -47,8 +47,9 @@ func (d *DB) CreateEmail(e *models.Email) error{
 }
 
 func (d *DB) GetEmail()([]*models.Email, error){
+	
 	var emails []*models.Email
-	err := d.db.Select(&emails, "SELECT * FROM email")
+	err := d.db.Select(&emails, "SELECT * FROM email")	
 	if err != nil{
 		return emails, err
 	}
