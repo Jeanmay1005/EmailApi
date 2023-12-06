@@ -6,7 +6,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-
+// structure of APP
 type App struct {
 	Router *mux.Router
 	DB database.EmailDB
